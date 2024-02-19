@@ -62,22 +62,22 @@ class DroneController(Node):
         	speed = Twist()
         	speed.linear.x = self.goalx1
         	speed.linear.y = self.goaly1
-                self.command_pub.publish(msg)
+                self.command_pub.publish(speed)
         if abs(self.Mx1 - self.Mx2) > 0.1 and if abs(self.My1 - self.My2) > 0.1:
         	speed = Twist()
         	speed.linear.x = self.goalx2
         	speed.linear.y = self.goaly2
-                self.command_pub.publish(msg)
+                self.command_pub.publish(speed)
         if abs(self.Mx2 - self.Mx3) > 0.1 and if abs(self.My2 - self.My3) > 0.1:
         	speed = Twist()
         	speed.linear.x = self.goalx3
         	speed.linear.y = self.goaly3
-                self.command_pub.publish(msg)
+                self.command_pub.publish(speed)
         if abs(self.Mx3 - self.Mx4) > 0.1 and if abs(self.My3 - self.My4) > 0.1:
         	speed = Twist()
         	speed.linear.x = self.goalx4
         	speed.linear.y = self.goaly4
-	        self.command_pub.publish(msg)
+	        self.command_pub.publish(speed)
 	
 	
 
